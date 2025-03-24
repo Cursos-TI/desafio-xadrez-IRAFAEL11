@@ -26,5 +26,22 @@ int main() {
         contadorRainha++;
     } while (contadorRainha <= movimentoRainha);
 
+    // Movimento do Cavalo usando loops aninhados
+    int movimentoBaixo = 2;
+    int movimentoEsquerda = 1;
+    printf("\nMovimento do Cavalo:\n");
+
+    for (int i = 1; i <= movimentoBaixo; i++) {
+        printf("Baixo - Casa %d\n", i); // Movimento para baixo
+    }
+
+    int contadorEsquerda = 1;
+    while (contadorEsquerda <= movimentoEsquerda) {
+        printf("Esquerda - Casa %d\n", contadorEsquerda); // Movimento para a esquerda
+        contadorEsquerda++;
+    }
+
     return 0;
 }
+
+
